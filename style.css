@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background: #081b29;
+   color: #ededed;
+}
+.header{
+   
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    padding: 20px 10%;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    
+}
+.logo{
+    text-decoration: none;
+    color: #ededed;
+    font-weight: 600;
+    font-size: 20px;
+    border: solid  3px rgb(70, 48, 74);
+    padding: 2px;
+    border-radius: 3px 7px 3px 7px;
+    margin-top: 2px; 
+ 
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 35px;
+    font-weight: 500;
+    transition: .3s;
+    color: #ededed;
+}
+.navbar a:hover{
+    color: rgb(195, 145, 209);
+}
+.L{
+    color: rgb(195, 145, 209);
+}
+.home{
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-text{
+    max-width: 600px;
+}
+.home-text h1{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    
+}
+.home-text h2{
+    font-size: 25px;
+    font-weight: 300;
+    color: rgb(50, 162, 241)
+}
+.home-text p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.home-text .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 35px;
+    padding-left: 100px;
+    
+
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 5px solid #00abf0;
+    border-radius: 5px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .2s;
+
+}
+.btn-box a:nth-child(1){
+    background: transparent;
+    color: #00abf0;
+
+}
+.btn-box a:nth-child(1):hover{
+   
+    color: #081b29;
+
+}
+.btn-box a:nth-child(1)::before{
+    background:  #00abf0;
+
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .4s;
+}
+
+
+.btn-box a:hover::before{
+    width: 100%;
+    color: #00abf0;
+    
+}
